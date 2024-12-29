@@ -12,7 +12,8 @@ export default {
     },
 
     fontFamily: {
-      'neue': ['helveticaneue-2'],
+      // 'neue': ['helvetica-neue-5'],
+      'inter': ['Inter'],
     },
     colors: {
       primary : "#3BFF81",
