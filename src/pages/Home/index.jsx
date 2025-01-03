@@ -56,20 +56,20 @@ const Home = () => {
                 <img src={GirlB} alt='GirlB' className='h-[319px] w-10/12 md:hidden' />
                 <div className='flex flex-col gap-[33px]'>
                     <div className='flex flex-col items-start lg:flex-row lg:items-center h-[256px] lg:h-[180px] w-full rounded-lg gap-3 p-4 bg-[#F3ECE7]'>
-                        <div className='bg-[#FFFFFF] w-[72px] h-[72px] lg:w-[250px] lg:h-[95px] rounded-full flex items-center justify-center lg:justify-start'>
-                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
+                        <div className='bg-[#FFFFFF] w-[72px] h-[72px] lg:w-[250px] lg:h-[75px] rounded-full flex items-center justify-center lg:justify-start'>
+                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[66px] lg:h-[35px]' />
                         </div>
                         <div className='flex flex-col gap-1'>
                             <p className='text-[#323334] font-bold font-neue text-[20px]'>Expert Guidance</p>
                             <p className='text-[#646668] text-base'>
-                                Navigating the UK mortgage market can be complex, 
-                                our experienced team offers step-by-step guidance to ensure the process is as smooth as possible.
+                                Navigating the UK property market can be complex, most especially for foreign investors and so, 
+                                our experienced team offers step-by-step guidance to ensure the process is as smooth as possible.
                             </p>
                         </div>
                     </div>
                     <div className='flex flex-col items-start lg:flex-row lg:items-center h-[256px] lg:h-[180px] w-full rounded-lg gap-3 p-4 bg-[#F5F7F8]'>
-                        <div className='bg-[#FFFFFF] w-[72px] h-[72px] lg:w-[250px] lg:h-[95px] rounded-full flex items-center lg:justify-start justify-center'>
-                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
+                        <div className='bg-[#FFFFFF] w-[72px] h-[72px] lg:w-[210px] lg:h-[85px] rounded-full flex items-center lg:justify-start justify-center'>
+                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[66px] lg:h-[45px]' />
                         </div>
                         <div className='flex flex-col gap-1'>
                             <p className='text-[#323334] font-bold font-neue text-[20px]'>Tailored Solutions</p>
@@ -80,8 +80,8 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='flex flex-col items-start lg:flex-row lg:items-center h-[256px] lg:h-[180px] w-full rounded-lg gap-3 p-4 bg-[#F8F9F7]'>
-                        <div className='bg-[#FFFFFF] w-[72px] h-[72px] lg:w-[250px] lg:h-[95px] rounded-full flex items-center justify-center lg:justify-start'>
-                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
+                        <div className='bg-[#FFFFFF] w-[72px] h-[72px] lg:w-[210px] lg:h-[85px] rounded-full flex items-center justify-center lg:justify-start'>
+                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[66px] lg:h-[45px]' />
                         </div>
                         <div className='flex flex-col gap-1'>
                             <p className='text-[#323334] font-bold font-neue text-[20px]'>Access to Exclusive Deals</p>
@@ -108,14 +108,9 @@ const Home = () => {
                 <div className='flex flex-col items-center gap-5'>
                     <div className='flex flex-col items-center w-[242px]'>
                         <p className='font-neue text-[24px] text-[#323334] lg:text-[40px] font-bold'>Our Services</p>
-                        <p className='font-inter font-semibold text-center text-xs lg:text-sm text-[#52507A]'>
-                            Interest only and interest roll up options (no monthly payments)
-                        </p>
                     </div>
                     <p className='font-neue lg:w-[460px] text-center text-xs lg:text-base text-[#646668]'>
-                        Our services cater to diverse needs, from families with loved ones in the UK to those earning 
-                        in foreign currencies. We provide bespoke terms and fast, efficient service to make your property 
-                        journey as seamless as possible.
+                        Let us help you turn your property aspirations into reality with confidence and ease.
                     </p>
                 </div>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
@@ -124,11 +119,11 @@ const Home = () => {
                             <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
                         </div>
                         <p className='text-[#323334] lg:w-[275px] font-neue text-lg leading-[24px] font-bold'>
-                            Mortgage Finance for Nigerian Residents
+                            Property Search and Guidance
                         </p>
                         <p className='font-neue text-[#646668] text-sm lg:text-base'>
-                            Our strength as a specialist mortgage broker is providing access to residential and 
-                            buy to let property finance from £150,000 to £25m.
+                            We help you find the perfect property that aligns with your needs, preferences, and budget. 
+                            From family homes to investment opportunities, our team will uncover options that suit you best.
                         </p>
                     </div>
                     <div className=' h-[324px] p-5 bg-[#F5F7F8] rounded-lg flex flex-col gap-[28px]'>
@@ -136,11 +131,11 @@ const Home = () => {
                             <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
                         </div>
                         <p className='text-[#323334] font-neue lg:w-[359px] leading-[24px] text-lg font-bold'>
-                            Property Finance for Those Paid in Foreign Currency
+                            Financial Planning and Support
                         </p>
                         <p className='font-neue text-[#646668] text-base'>
-                            Get pre-approval terms within 24 hours, giving you a clear 
-                            picture of what you can afford and moving you closer to securing your UK property.
+                            Navigating property financing can be complex. 
+                            We work closely with financial specialists to help you explore tailored solutions that fit your situation.
                         </p>
                     </div>
                     <div className='h-[324px] p-5 bg-[#F3ECE7] lg:hidden rounded-lg flex flex-col gap-[32px]'>
@@ -148,12 +143,11 @@ const Home = () => {
                             <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
                         </div>
                         <p className='text-[#323334] font-neue text-lg lg:w-[259px] leading-[24px] font-bold'>
-                            Pre-Approval Within 24 Hours
+                            Administrative Assistance
                         </p>
                         <p className='font-neue text-[#646668] text-base'>
-                            We understand the importance of moving quickly in the property market. 
-                            That’s why we offer pre-approval within 24 hours, helping you take the first step toward 
-                            securing your property.
+                            We connect you with trusted admins and ensure all necessary paperwork is handled efficiently, 
+                            giving you peace of mind.
                         </p>
                     </div>
                     <div className='h-[324px] p-5 bg-[#F5F7F8] rounded-lg flex flex-col gap-[28px]'>
@@ -161,11 +155,12 @@ const Home = () => {
                             <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
                         </div>
                         <p className='text-[#323334] font-neue text-lg lg:w-[259px] leading-[24px] font-bold'>
-                            Property Finance for Nigerian Families in the UK
+                            Pre-Approval Within 24 Hours
                         </p>
                         <p className='font-neue text-[#646668] text-base'>
-                            For Nigerian citizens with families, whether you're purchasing a family home or refinancing, 
-                            we can provide mortgages that support your long-term plans.
+                            We understand the importance of moving quickly in the property market. 
+                            That’s why we offer pre-approval within 24 hours, helping you take the first step toward 
+                            securing your property.
                         </p>
                     </div>
                     <div className='h-[324px] p-5 bg-[#F3ECE7] rounded-lg hidden lg:flex flex-col gap-[32px]'>
@@ -173,12 +168,11 @@ const Home = () => {
                             <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
                         </div>
                         <p className='text-[#323334] font-neue text-lg lg:w-[259px] leading-[24px] font-bold'>
-                            Pre-Approval Within 24 Hours
+                            Administrative Assistance
                         </p>
                         <p className='font-neue text-[#646668] text-base'>
-                            We understand the importance of moving quickly in the property market. 
-                            That’s why we offer pre-approval within 24 hours, helping you take the first step toward 
-                            securing your property.
+                            We connect you with trusted admins and ensure all necessary paperwork is handled efficiently, 
+                            giving you peace of mind.
                         </p>
                     </div>
 

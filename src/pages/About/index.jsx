@@ -44,13 +44,13 @@ const About = () => {
                 Who we are
               </p>
               <p className='text-base font-neue text-[#191A1A]'>
-                We are a team of specialist mortgage brokers dedicated to helping Nigerians achieve their 
-                dream of owning property in the UK. With deep industry knowledge and a passion for empowering our clients, 
-                we have built a reputation for delivering tailored solutions that meet diverse needs and budgets.
+                We are your dedicated guide in the property market. 
+                We pride ourselves on delivering expert advice and personalized support to help you achieve your property goals. 
+                Whether you're taking your first step onto the property ladder or refining your investment portfolio, 
+                we’re here to make the process seamless and straightforward.
               </p>
             </div>
         </div>
-
       </div>
       <div 
         data-aos="fade-up" 
@@ -73,8 +73,8 @@ const About = () => {
                     <div className='flex flex-col gap-1'>
                         <p className='text-[#323334] font-bold font-neue text-[20px]'>Expert Guidance</p>
                         <p className='text-[#646668] text-base'>
-                            Navigating the UK mortgage market can be complex, 
-                            our experienced team offers step-by-step guidance to ensure the process is as smooth as possible.
+                          Getting your dream property can be complex, 
+                          our experienced team offers step-by-step guidance to ensure the process is as smooth as possible.
                         </p>
                     </div>
                 </div>
