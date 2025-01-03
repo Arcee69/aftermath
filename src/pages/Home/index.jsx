@@ -49,8 +49,9 @@ const Home = () => {
                 <div className='flex flex-col gap-5'>
                     <p className='font-neue text-[#323334] font-bold text-[24px] lg:text-[40px]'>Why Choose Us?</p>
                     <p className='text-[14px] lg:text-base text-[#646668] font-neue'>
-                        Our strength as a specialist mortgage broker is 
-                        providing access to residential and buy to let property finance.
+                        At AIK Ltd, we specialize in providing bespoke real estate consultancy services tailored 
+                        to Nigerians investing in UK properties and UK-based individuals exploring strategic 
+                        property investments in Nigeria.
                     </p>
                 </div>
                 <img src={GirlB} alt='GirlB' className='h-[319px] w-10/12 md:hidden' />
