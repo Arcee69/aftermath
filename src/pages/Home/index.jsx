@@ -5,18 +5,28 @@ import Girl from "../../assets/png/girl.png"
 import Shapes from "../../assets/png/shapes.png"
 import GirlB from "../../assets/png/girl_mobile.png"
 import HomeBg from "../../assets/png/home.png"
+import BlueBg from "../../assets/png/bg_blue.png"
+import SmallBlueBg from "../../assets/png/bg_blue_small.png"
 import HouseA from "../../assets/png/house-a.png"
 import HouseB from "../../assets/png/house-b.png"
 import HouseC from "../../assets/png/house-c.png"
+import HouseD from "../../assets/png/house_d.png"
+import Street from "../../assets/png/street_view.png"
+import Equity from "../../assets/png/equity.png"
+import Debt from "../../assets/png/debt.png"
+import Profit from "../../assets/png/profit.png"
 import GalleryHouseA from "../../assets/png/gallery_home_a.png"
 import GalleryHouseB from "../../assets/png/gallery_home_b.png"
 import GalleryHouseC from "../../assets/png/gallery_home_c.png"
 
 import Door from "../../assets/svg/door.svg"
+import Logo from "../../assets/svg/logo_white.svg"
 
 const Home = () => {
   
     const navigate = useNavigate()
+
+    const isMobile = window.innerWidth < 768
 
   return (
     <div className='w-full' data-aos="fade-up" data-aos-duration="3000">
@@ -40,37 +50,249 @@ const Home = () => {
                 </button>
             </div>
         </div>
+
         <div 
             data-aos="fade-up" 
             data-aos-duration="3000"
-            className='mt-[69px] lg:mt-[158px] px-5 lg:pl-[100px] w-full flex flex-col lg:flex-row items-center justify-between'
+            className=' bg-[#4D4F51] lg:pt-[61px] px-5 lg:px-0 h-auto w-full flex flex-col items-center justify-center'
         >
-            <div className='w-full lg:w-[531px] flex flex-col gap-6 lg:gap-[36px]'>
-                <div className='flex flex-col gap-5'>
-                    <p className='font-neue text-[#323334] font-bold text-[24px] lg:text-[40px]'>Why Choose Us?</p>
-                    <p className='text-[14px] lg:text-base text-[#646668] font-neue'>
-                        At AIK Ltd, we specialize in providing bespoke real estate consultancy services tailored 
-                        to Nigerians investing in UK properties and UK-based individuals exploring strategic 
-                        property investments in Nigeria.
+            <div className='w-full lg:w-[803px] mx-auto flex flex-col items-center gap-6'>
+                <div className='flex flex-col items-center gap-10'>
+                    <div className='gap-5 flex flex-col items-center'>
+                        <img src={Logo} alt='Logo' className='w-[241px] h-[64px]' />
+                        <p className='font-neue text-[#fff] text-center font-bold text-[24px] lg:text-[48px]'>
+                            Bridging the Nigeria-UK and Global Connection
+                        </p>
+                    </div>
+                    <p className='text-[14px] lg:text-base text-center text-[#fff] font-neue'>
+                        While our expertise shines in the Nigeria-UK corridor, our reach and capabilities extend across 
+                        the global investment landscape. For Nigerians, we provide access to the UK’s stable and lucrative 
+                        property market, offering investment opportunities backed by robust growth potential and legal protections.
+                    </p>
+                    <p className='text-[14px] lg:text-base text-center text-[#fff] font-neue'>
+                        For UK-based and international clients, we unlock opportunities in Nigeria’s dynamic and fast-developing 
+                        real estate market, with a focus on high-yield areas like Lagos, Ikoyi, Lekki Phase 1, and 
+                        Orange Island to mention a few.
+                    </p>
+                    <p className='text-[14px] lg:text-base text-center text-[#fff] font-neue'>
+                        Additionally, we offer bespoke advisory and investment solutions for discerning investors seeking 
+                        opportunities in other thriving global markets, AIK’s global partnerships and in-depth market 
+                        knowledge position us as the ideal bridge for cross-border investment opportunities, 
+                        ensuring every client’s objectives are met with precision and success.
                     </p>
                 </div>
-                <img src={GirlB} alt='GirlB' className='h-[319px] w-10/12 md:hidden' />
-                <div className='flex flex-col gap-[33px]'>
-                    <div className='flex flex-col items-start lg:flex-row lg:items-center h-[256px] lg:h-[180px] w-full rounded-lg gap-3 p-4 bg-[#F3ECE7]'>
-                        <div className='bg-[#FFFFFF] w-[72px] h-[72px] lg:w-[250px] lg:h-[75px] rounded-full flex items-center justify-center lg:justify-start'>
-                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[66px] lg:h-[35px]' />
+                <div className='w-full lg:w-[734px] flex flex-col items-center mt-[32px] justify-center gap-5'>
+                    <p className='text-[#fff] font-neue text-lg text-center lg:w-[381px] mx-auto'>
+                        Browse through our gallery of properties we have acquired for our clients over the years.
+                    </p>
+                    <div className='flex md:hidden flex-col gap-[36px]'>
+                        <img src={GalleryHouseA} alt='GalleryHouseA' className='' />
+                        <img src={GalleryHouseB} alt='GalleryHouseB' className='' />
+                        <img src={GalleryHouseC} alt='GalleryHouseC' className='' />
+                    </div>
+                    <div className='hidden md:flex flex-col items-center gap-5 md:w-[500px] lg:w-[734px]'>
+                        <div className='w-full'>
+                            <img src={HouseA} alt='HouseA' className='' />
                         </div>
-                        <div className='flex flex-col gap-1'>
-                            <p className='text-[#323334] font-bold font-neue text-[20px]'>Expert Guidance</p>
-                            <p className='text-[#646668] text-base'>
-                                Navigating the UK property market can be complex, most especially for foreign investors and so, 
-                                our experienced team offers step-by-step guidance to ensure the process is as smooth as possible.
+                        <div className='flex items-center gap-5'>
+                            <img src={HouseB} alt='HouseB' className='w-[165px] lg:w-[361px]' />
+                            <img src={HouseC} alt='HouseC' className='w-[165px] lg:w-[361px]' />
+                        </div>
+                    </div>
+                </div>
+
+                <button
+                    className='w-[138px] h-[45px] rounded-lg bg-[#090540] mb-[60px] p-2'
+                    type='button'
+                    onClick={() => navigate("/gallery") }
+                >
+                    <p className='text-[#fff] font-neue font-bold text-[14px]'>See full gallery</p>
+                </button>
+             
+            </div>
+           
+        </div>
+
+        <div 
+            className='flex flex-col w-full mt-[100px] px-5 lg:flex-row lg:justify-between lg:px-[100px]'  
+            data-aos="fade-up" 
+            data-aos-duration="3000"
+        >
+            <div className='w-full lg:w-[531px] flex flex-col gap-[36px]'>
+                <div className='flex flex-col gap-5'>
+                    <p className='text-[24px] lg:text-[48px] font-bold font-neue text-[#323334]'>What We Do</p>
+                    <p className='font-neue text-base text-[#646668]'>
+                        At AIK Ltd, we specialize in delivering world-class real estate consultancy services tailored to:
+                    </p>
+                    <div className='lg:hidden flex w-full'>
+                        <img src={HouseD} alt='HouseD' className='' />
+                    </div>
+                    <div className='flex  items-start border-[5px] rounded-xl border-l-[#090540] border-t-0 border-b-0 border-r-0 flex-row items-center h-[88px] lg:h-[104px] w-full rounded-lg gap-5 p-4 bg-[#F3ECE7]'>
+                        <div className='bg-[#FFFFFF] w-[60px] h-[40px] lg:w-[66px] lg:h-[56px] rounded-full flex items-center justify-center lg:justify-start'>
+                            <img src={Door} alt='Door' className='w-[30px] h-[18px] lg:w-[42px] lg:h-[25px]' />
+                        </div>
+                        <p className='text-[#323334] font-medium font-neue text-sm lg:text-[20px]'>
+                            Nigerians seeking premium property investments in the UK.
+                        </p>
+                    </div>
+                    <div className='flex items-start border-[5px] rounded-xl border-l-[#090540] border-t-0 border-b-0 border-r-0 flex-row items-center h-[88px] lg:h-[104px] w-full rounded-lg gap-5 p-4 bg-[#F3ECE7]'>
+                        <div className='bg-[#FFFFFF] w-[60px] h-[40px] lg:w-[66px] lg:h-[56px] rounded-full flex items-center justify-center lg:justify-start'>
+                            <img src={Door} alt='Door' className='w-[30px] h-[18px] lg:w-[42px] lg:h-[25px]' />
+                        </div>
+                        <p className='text-[#323334] font-medium font-neue text-sm lg:text-[20px]'>
+                            UK-based clients exploring high-growth opportunities in Nigeria.
+                        </p>
+                    </div>
+                    <div className='flex items-start border-[5px] rounded-xl border-l-[#090540] border-t-0 border-b-0 border-r-0 flex-row items-center h-[88px] lg:h-[104px] w-full rounded-lg gap-5 p-4 bg-[#F3ECE7]'>
+                        <div className='bg-[#FFFFFF] w-[60px] h-[40px] lg:w-[66px] lg:h-[56px] rounded-full flex items-center justify-center lg:justify-start'>
+                            <img src={Door} alt='Door' className='w-[30px] h-[18px] lg:w-[42px] lg:h-[25px]' />
+                        </div>
+                        <p className='text-[#323334] font-medium font-neue text-sm lg:text-[20px]'>
+                            Global investors pursuing lucrative opportunities in key international markets.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className='hidden lg:flex w-5/12'>
+                <img src={HouseD} alt='HouseD' className='' />
+            </div>
+        </div>
+
+        <div 
+            className='flex flex-col w-full mt-[100px] px-5 lg:px-[50px]'  
+            data-aos="fade-up" 
+            data-aos-duration="3000"
+        >
+            <div 
+                className='w-full lg:w-11/12 mx-auto px-5 lg:px-[100px] h-auto py-[89px] gap-[56px] flex flex-col items-center'
+                style={{
+                    backgroundImage: `url(${isMobile ?  SmallBlueBg : BlueBg })`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: `${isMobile ? "cover" : "contain" }` 
+                }}
+            >
+                <div className='flex flex-col items-center gap-5'>
+                    <div className='flex flex-col items-center w-[242px]'>
+                        <p className='font-neue text-[24px] text-[#fff] lg:text-[40px] font-bold'>Our Services</p>
+                    </div>
+                    <p className='font-neue lg:w-[460px] text-center text-xs lg:text-base text-[#fff]'>
+                        Let us help you turn your property aspirations into reality with confidence and ease.
+                    </p>
+                </div>
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
+                    <div className=' h-auto lg:h-[168px] p-5 bg-[#6B698E] rounded-lg flex flex-col lg:flex-row lg:items-center gap-[32px]'>
+                        <div className='w-[72px] h-[72px] lg:w-[98px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
+                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
+                        </div>
+                        <div className='flex flex-col gap-2'>
+                            <p className='text-[#fff] text-base font-neue lg:text-lg  font-bold'>
+                                Property Sourcing and Inspection
+                            </p>
+                            <p className='font-neue text-[#fff] text-sm lg:text-base'>
+                                Identifying high-value opportunities tailored to your goals.
                             </p>
                         </div>
                     </div>
-                    <div className='flex flex-col items-start lg:flex-row lg:items-center h-[256px] lg:h-[180px] w-full rounded-lg gap-3 p-4 bg-[#F5F7F8]'>
-                        <div className='bg-[#FFFFFF] w-[72px] h-[72px] lg:w-[210px] lg:h-[85px] rounded-full flex items-center lg:justify-start justify-center'>
-                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[66px] lg:h-[45px]' />
+                    <div className='h-auto lg:h-[168px] p-5 bg-[#6B698E] rounded-lg flex flex-col lg:flex-row lg:items-center gap-[32px]'>
+                        <div className='w-[72px] h-[72px] lg:w-[98px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
+                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
+                        </div>
+                        <div className='flex flex-col gap-2'>
+                            <p className='text-[#fff] font-neue text-base lg:text-lg font-bold'>
+                                Due Dilligence
+                            </p>
+                            <p className='font-neue text-[#fff] text-sm lg:text-base'>
+                                Providing peace of mind through meticulous checks
+                            </p>
+                        </div>
+                    </div>
+                    <div className='h-auto lg:h-[168px] p-5 bg-[#6B698E] lg:hidden rounded-lg flex flex-col lg:flex-row lg:items-center gap-[32px]'>
+                        <div className='w-[72px] h-[72px] lg:w-[98px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
+                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
+                        </div>
+                        <div className='flex flex-col gap-2'>
+                            <p className='text-[#fff] font-neue text-base lg:text-lg font-bold'>
+                                Contract Finalization
+                            </p>
+                            <p className='font-neue text-[#fff] text-sm lg:text-base'>
+                                Ensuring a smooth and successful transaction process.
+                            </p>
+                        </div>
+                    </div>
+                    <div className='h-[168px] p-5 bg-[#6B698E] rounded-lg hidden lg:flex flex-col lg:flex-row lg:items-center gap-[32px]'>
+                        <div className='w-[72px] h-[72px] lg:w-[88px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
+                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
+                        </div>
+                        <div className='flex flex-col gap-2'>
+                            <p className='text-[#fff] font-neue text-lg font-bold'>
+                                Contract Finalization
+                            </p>
+                            <p className='font-neue text-[#fff] text-base'>
+                                Ensuring a smooth and successful transaction process.
+                            </p>
+                        </div>
+                    </div>
+                    <div className='h-auto lg:h-[168px] p-5 rounded-lg flex flex-col lg:flex-row lg:items-center gap-[32px]'>
+                        <div className='w-[72px] h-[72px] lg:w-[128px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
+                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
+                        </div>
+                        <div className='flex flex-col gap-2'>
+                            <p className='text-[#fff] font-neue text-base lg:text-lg font-bold'>
+                                Recent milestones
+                            </p>
+                            <ul className='font-neue text-[#fff] list-disc text-sm'>
+                                <li>Assisting UK-based clients in acquiring properties in Nigeria</li>
+                                <li>Advancing a Nigeria-UK investment deal with a leading Lagos asset management firm</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button
+                    className='w-[208px] h-[53px] rounded-lg bg-[#F2F2F3] p-2'
+                    type='button'
+                >
+                    <p className='text-[#090540] font-neue font-bold text-[14px]'>Contact us to get started</p>
+                </button>
+
+            </div>
+        </div>
+
+        <div 
+            data-aos="fade-up" 
+            data-aos-duration="3000"
+            className='mt-[100px] lg:mt-[242px] w-full px-5 lg:px-[100px] flex flex-col md:flex-row items-start justify-between'
+        >
+
+            <div className='hidden md:flex flex-col'>
+                <img src={Street} alt='Street' className='' />
+            </div>
+
+            <div className='w-full lg:w-[531px] flex flex-col gap-6 lg:gap-[30px]'>
+                <div className='flex flex-col gap-5'>
+                    <p className='font-neue text-[#323334] font-bold text-[24px] lg:text-[40px]'>Why Choose Us?</p>
+                    <p className='text-[14px] lg:text-base text-[#646668] font-neue'>
+                        At AIK Ltd, we redefine excellence in real estate investments, delivering bespoke solutions rooted in:
+                    </p>
+                </div>
+                <img src={Street} alt='Street' className='h-[319px] w-full md:hidden' />
+                <div className='flex flex-col gap-[33px]'>
+                    <div className='flex flex-col items-start rounded-xl border-[5px] border-l-[#090540] border-y-0 border-r-0 lg:flex-row lg:items-center h-[256px] lg:h-[180px] w-full rounded-lg gap-3 p-4 bg-[#F3ECE7]'>
+                        <div className='bg-[#FFFFFF] w-[72px] h-[72px] lg:w-[250px] lg:h-[95px] rounded-full flex items-center justify-center lg:justify-start'>
+                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
+                        </div>
+                        <div className='flex flex-col gap-1'>
+                            <p className='text-[#323334] font-bold font-neue text-[20px]'>Unmatched Expertise</p>
+                            <p className='text-[#646668] text-base'>
+                                Getting your dream property can be complex, 
+                                our experienced team offers step-by-step guidance to ensure the process is as smooth as possible.
+                            </p>
+                        </div>
+                    </div>
+                    <div className='flex flex-col items-start rounded-xl border-[5px] border-l-[#090540] border-y-0 border-r-0 lg:flex-row lg:items-center h-[256px] lg:h-[180px] w-full rounded-lg gap-3 p-4 bg-[#F5F7F8]'>
+                        <div className='bg-[#FFFFFF] w-[72px] h-[72px] lg:w-[250px] lg:h-[95px] rounded-full flex items-center lg:justify-start justify-center'>
+                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
                         </div>
                         <div className='flex flex-col gap-1'>
                             <p className='text-[#323334] font-bold font-neue text-[20px]'>Tailored Solutions</p>
@@ -80,9 +302,9 @@ const Home = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='flex flex-col items-start lg:flex-row lg:items-center h-[256px] lg:h-[180px] w-full rounded-lg gap-3 p-4 bg-[#F8F9F7]'>
-                        <div className='bg-[#FFFFFF] w-[72px] h-[72px] lg:w-[210px] lg:h-[85px] rounded-full flex items-center justify-center lg:justify-start'>
-                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[66px] lg:h-[45px]' />
+                    <div className='flex flex-col items-start rounded-xl border-[5px] border-l-[#090540] border-y-0 border-r-0 lg:flex-row lg:items-center h-[256px] lg:h-[180px] w-full rounded-lg gap-3 p-4 bg-[#F8F9F7]'>
+                        <div className='bg-[#FFFFFF] w-[72px] h-[72px] lg:w-[250px] lg:h-[95px] rounded-full flex items-center justify-center lg:justify-start'>
+                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
                         </div>
                         <div className='flex flex-col gap-1'>
                             <p className='text-[#323334] font-bold font-neue text-[20px]'>Access to Exclusive Deals</p>
@@ -93,131 +315,109 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className='w-6/12 relative hidden lg:block'>
-                <img src={Girl} alt='Girl' className='w-[473px] h-[648px]' />
-                <img src={Shapes} alt='Shapes' className='w-[595px] h-[884px] absolute -top-20 -z-10' />
-            </div>
-        </div>
-
-        <div 
-            className='flex flex-col w-full mt-[100px] px-5 lg:px-[100px]'  
-            data-aos="fade-up" 
-            data-aos-duration="3000"
-        >
-            <div className='w-full lg:w-10/12 mx-auto lg:px-[100px] gap-[56px] flex flex-col items-center'>
-                <div className='flex flex-col items-center gap-5'>
-                    <div className='flex flex-col items-center w-[242px]'>
-                        <p className='font-neue text-[24px] text-[#323334] lg:text-[40px] font-bold'>Our Services</p>
-                    </div>
-                    <p className='font-neue lg:w-[460px] text-center text-xs lg:text-base text-[#646668]'>
-                        Let us help you turn your property aspirations into reality with confidence and ease.
-                    </p>
-                </div>
-                <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
-                    <div className=' h-[324px] p-5 bg-[#F3ECE7] rounded-lg flex flex-col gap-[28px]'>
-                        <div className='w-[72px] h-[72px] lg:w-[88px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
-                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
-                        </div>
-                        <p className='text-[#323334] lg:w-[275px] font-neue text-lg leading-[24px] font-bold'>
-                            Property Search and Guidance
-                        </p>
-                        <p className='font-neue text-[#646668] text-sm lg:text-base'>
-                            We help you find the perfect property that aligns with your needs, preferences, and budget. 
-                            From family homes to investment opportunities, our team will uncover options that suit you best.
-                        </p>
-                    </div>
-                    <div className=' h-[324px] p-5 bg-[#F5F7F8] rounded-lg flex flex-col gap-[28px]'>
-                        <div className='w-[72px] h-[72px] lg:w-[88px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
-                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
-                        </div>
-                        <p className='text-[#323334] font-neue lg:w-[359px] leading-[24px] text-lg font-bold'>
-                            Financial Planning and Support
-                        </p>
-                        <p className='font-neue text-[#646668] text-base'>
-                            Navigating property financing can be complex. 
-                            We work closely with financial specialists to help you explore tailored solutions that fit your situation.
-                        </p>
-                    </div>
-                    <div className='h-[324px] p-5 bg-[#F3ECE7] lg:hidden rounded-lg flex flex-col gap-[32px]'>
-                        <div className='w-[72px] h-[72px] lg:w-[88px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
-                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
-                        </div>
-                        <p className='text-[#323334] font-neue text-lg lg:w-[259px] leading-[24px] font-bold'>
-                            Administrative Assistance
-                        </p>
-                        <p className='font-neue text-[#646668] text-base'>
-                            We connect you with trusted admins and ensure all necessary paperwork is handled efficiently, 
-                            giving you peace of mind.
-                        </p>
-                    </div>
-                    <div className='h-[324px] p-5 bg-[#F5F7F8] rounded-lg flex flex-col gap-[28px]'>
-                        <div className='w-[72px] h-[72px] lg:w-[88px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
-                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
-                        </div>
-                        <p className='text-[#323334] font-neue text-lg lg:w-[259px] leading-[24px] font-bold'>
-                            Pre-Approval Within 24 Hours
-                        </p>
-                        <p className='font-neue text-[#646668] text-base'>
-                            We understand the importance of moving quickly in the property market. 
-                            That’s why we offer pre-approval within 24 hours, helping you take the first step toward 
-                            securing your property.
-                        </p>
-                    </div>
-                    <div className='h-[324px] p-5 bg-[#F3ECE7] rounded-lg hidden lg:flex flex-col gap-[32px]'>
-                        <div className='w-[72px] h-[72px] lg:w-[88px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
-                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
-                        </div>
-                        <p className='text-[#323334] font-neue text-lg lg:w-[259px] leading-[24px] font-bold'>
-                            Administrative Assistance
-                        </p>
-                        <p className='font-neue text-[#646668] text-base'>
-                            We connect you with trusted admins and ensure all necessary paperwork is handled efficiently, 
-                            giving you peace of mind.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <div 
-            data-aos="fade-up" 
-            data-aos-duration="3000"
-            className='mt-[100px] lg:mt-[242px] w-full px-5 lg:px-[100px] flex flex-col md:flex-row items-start justify-between'
-        >
-            <div className='flex flex-col gap-5 lg:w-[381px] h-[191px]'>
-                <p className='font-neue font-bold text-[24px] lg:text-[48px] text-[#323334]'>
-                    Gallery
-                </p>
-                <p className='text-[#646668] text-sm lg:text-base font-neue'>
-                    Browse through our gallery of properties we have acquired for our clients over the years.
-                </p>
                 <button
-                    className='bg-[#090540] w-[138px] h-[45px] p-3 rounded flex flex-col items-center justify-center'
-                    onClick={() => navigate("/gallery")}
+                    type='button'
+                    className='bg-[#090540] h-[40px] rounded-lg flex items-center justify-center w-[113px]'
                 >
-                    <p className='text-[#fff] font-neue text-sm font-bold'>See full gallery</p>
+                    <p className='text-[#fff] font-neue'>Contact us</p>
                 </button>
             </div>
 
-            <div className='flex md:hidden flex-col gap-[36px]'>
-                <img src={GalleryHouseA} alt='GalleryHouseA' className='' />
-                <img src={GalleryHouseB} alt='GalleryHouseB' className='' />
-                <img src={GalleryHouseC} alt='GalleryHouseC' className='' />
+        </div>
+
+        <div 
+            className='mt-[138px] lg:mt-[190px] w-full flex flex-col items-center justify-center gap-[50px] px-5 lg:px-[100px]'
+            data-aos="fade-up" 
+            data-aos-duration="3000"
+        >
+            <div className="flex flex-col gap-3">
+                <p className="font-bold font-neue text-[24px] lg:text-[40px] ">Investment Opportunities</p>
+                <p className="w-full lg:w-[460px] text-[#646668] text-sm lg:text-sm text-center font-neue">
+                    We invite discerning investors and organizations worldwide to partner with us through
+                </p>
             </div>
 
-            <div className='hidden md:flex flex-col gap-5 md:w-[500px] lg:w-[734px]'>
-                <div className='w-full'>
-                    <img src={HouseA} alt='HouseA' className='' />
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+                <div className="h-[540px] lg:h-[627px]  py-[32px] px-5 shadow-xl flex flex-col gap-5 lg:gap-[37px] rounded-xl">
+                    <img src={Equity} alt="Equity" className="" />
+                    <div className="flex flex-col gap-3">
+                        <p className="font-bold text-[#323334] font-neue text-lg lg:text-xl">Equity Partnerships</p>
+                        <p className="text-sm lg:text-base font-neue text-[#646668]">
+                            At AIK Ltd, we redefine excellence in real estate investments, delivering bespoke solutions rooted in:
+                        </p>
+                    </div>
                 </div>
-                <div className='flex items-center gap-5'>
-                    <img src={HouseB} alt='HouseB' className='w-[165px] lg:w-[361px]' />
-                    <img src={HouseC} alt='HouseC' className='w-[165px] lg:w-[361px]' />
+                <div className="h-[540px] lg:h-[627px]  py-[32px] px-5 shadow-xl flex flex-col gap-[37px] rounded-xl">
+                    <img src={Debt} alt="Debt" className="" />
+                    <div className="flex flex-col gap-3">
+                        <p className="font-bold text-[#323334] font-neue text-lg lg:text-xl">Debt Financing</p>
+                        <p className="text-sm lg:text-base font-neue text-[#646668]">
+                            At AIK Ltd, we redefine excellence in real estate investments, delivering bespoke solutions rooted in:
+                        </p>
+                    </div>
                 </div>
+                <div className="h-[540px] lg:h-[627px] py-[32px] px-5 shadow-xl flex flex-col gap-[37px] rounded-xl">
+                    <img src={Profit} alt="Profit" className="" />
+                    <div className="flex flex-col gap-3">
+                        <p className="font-bold text-[#323334] font-neue text-lg lg:text-xl">Profit-Sharing Models</p>
+                        <p className="text-sm lg:text-base font-neue text-[#646668]">
+                            At AIK Ltd, we redefine excellence in real estate investments, delivering bespoke solutions rooted in:
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
+        </div>
+
+        <div 
+            className='mt-[138px] lg:mt-[190px] w-full flex flex-col items-start gap-[36px] px-5 lg:px-[100px]'
+            data-aos="fade-up" 
+            data-aos-duration="3000"
+        >
+            <p className="font-neue text-[#000] text-[24px] font-bold lg:text-[40px]">Key Benefits</p>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+
+                <div className=" h-[132px] flex items-center bg-[#F3ECE7] rounded-xl p-2 gap-5 border-[5px] border-y-0 border-r-0 border-l-[#090540]">
+                    <div className='bg-[#FFFFFF] w-[80px] h-[50px] rounded-full flex items-center justify-center'>
+                        <img src={Door} alt='Door' className='w-[32px] h-[32px]' />
+                    </div>
+                    <div className="flex flex-col gap-2">
+                        <p className="font-neue text-[#323334] font-bold text-sm lg:text-[20px]">Global Diversification</p>
+                        <p className="text-sm text-[#646668] font-neue lg:text-base">Expand your portfolio globally with stable, high-yield investments.</p>
+                    </div>
+                </div>
+
+                <div className=" h-[132px] flex items-center bg-[#F5F7F8] rounded-xl p-2 gap-5 border-[5px] border-y-0 border-r-0 border-l-[#090540]">
+                    <div className='bg-[#FFFFFF] w-[80px] h-[50px] rounded-full flex items-center justify-center'>
+                        <img src={Door} alt='Door' className='w-[32px] h-[32px]' />
+                    </div>
+                    <div className="flex flex-col gap-2">
+                        <p className="font-neue text-[#323334] font-bold text-sm lg:text-[20px]">Risk Management:</p>
+                        <p className="text-sm text-[#646668] font-neue lg:text-base">
+                            Benefit from AIK’s proven strategies and expertise in multiple markets.
+                        </p>
+                    </div>
+                </div>
+
+                <div className=" h-[132px] flex items-center bg-[#F8F9F7] rounded-xl p-2 gap-5 border-[5px] border-y-0 border-r-0 border-l-[#090540]">
+                    <div className='bg-[#FFFFFF] w-[80px] h-[50px] rounded-full flex items-center justify-center'>
+                        <img src={Door} alt='Door' className='w-[32px] h-[32px]' />
+                    </div>
+                    <div className="flex flex-col gap-2">
+                        <p className="font-neue text-[#323334] font-bold text-sm lg:text-[20px]">Collaborative Growth</p>
+                        <p className="text-sm text-[#646668] font-neue lg:text-base">
+                            Partner with experienced professionals for maximum impact.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button
+                type='button'
+                className='bg-[#090540] h-[40px] rounded-lg flex items-center justify-center w-[113px]'
+            >
+                <p className='text-[#fff] font-neue'>Contact us</p>
+            </button>
         </div>
 
         <div 
