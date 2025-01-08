@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import { toast } from "react-toastify"
+import { CgSpinner } from "react-icons/cg"
+import axios from 'axios'
 
 import Shapes from "../assets/png/shapes.png"
 
@@ -9,9 +12,43 @@ import Linkedin from "../assets/svg/linkedin.svg"
 
 
 const Footer = () => {
+    const [loading, setLoading] = useState(false)
     const [fullName, setFullName] = useState("")
+    const [service, setService] = useState("")
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
+
+    const submitForm = async () => {
+        setLoading(true)
+        const data = {
+            "name": fullName,
+            "email": email,
+            "service": service,
+            "message": message
+        }
+        try {
+            const res = await axios.post("https://aik.smhptech.com/api/contact-us", data)
+            console.log(res, "skibi")
+            toast(`${res?.data?.message}`, { 
+                position: "top-right",
+                autoClose: 3500,
+                closeOnClick: true,
+            });
+            setFullName("")
+            setService("")
+            setEmail("")
+            setMessage("")
+        } catch (err) {
+            console.log(err, "skibi")
+            toast(`Error`, { 
+                position: "top-right",
+                autoClose: 3500,
+                closeOnClick: true,
+            });
+        } finally {
+            setLoading(false)
+        }
+    }
 
   return (
     <>
@@ -34,7 +71,7 @@ const Footer = () => {
                             name='fullName'
                             value={fullName}
                             placeholder='John Doe'
-                            className='rounded-lg bg-[#221E53] outline-none w-full h-[44px] p-2'
+                            className='rounded-lg bg-[#221E53] outline-none text-[#fff] w-full h-[44px] p-2'
                             onChange={(e) => setFullName(e.target.value)}
                         />
                     </div>
@@ -46,16 +83,22 @@ const Footer = () => {
                             name='email'
                             value={email}
                             placeholder='example@mail.com'
-                            className='rounded-lg  bg-[#221E53] outline-none w-full h-[44px] p-2'
+                            className='rounded-lg  bg-[#221E53] outline-none text-[#fff] w-full h-[44px] p-2'
                             onChange={(e) => setEmail(e.target.value)}
                         />
                     </div>
                     <div className='flex flex-col w-full'>
                         <p className='font-neue text-[#fff] font-medium '>Service</p>
                        
-                        <select name='service' className='apperance-none rounded-lg bg-[#221E53] flex items-center text-[#fff]  w-full h-[44px] p-2 outline-none'>
-                            <option value="US">US</option>
-                            <option value="US">NG</option>
+                        <select 
+                            name='service'
+                            value={service}
+                            onChange={(e) => setService(e.target.value)} 
+                            className='apperance-none rounded-lg bg-[#221E53] text-[#fff] flex items-center text-[#fff]  w-full h-[44px] p-2 outline-none'
+                        >
+                            <option value="">Select</option>
+                            <option value="Property">Property</option>
+                            <option value="Investment">Investment</option>
                         </select>
                         
                     </div>
@@ -64,16 +107,20 @@ const Footer = () => {
                         <textarea 
                             type='text'
                             name='message'
+                            value={message}
                             placeholder='Type Message Here...'
-                            className='rounded-lg outline-none bg-[#221E53] w-full h-[128px] p-2'
+                            className='rounded-lg outline-none bg-[#221E53] text-[#fff] w-full h-[128px] p-2'
                             onChange={(e) => setMessage(e.target.value)}
                         ></textarea>
                     </div>
 
                     <a 
                         className='w-[101px] h-[44px] bg-[#fff] md:mx-auto lg:mx-0 flex flex-col items-center justify-center rounded-lg'
+                        onClick={submitForm}
                     >
-                        <p className='text-[#090540] font-semibold text-base'>Submit</p>
+                        <p className='text-[#090540] font-semibold text-base'>
+                            {loading ? <CgSpinner className=" animate-spin text-lg" /> : 'Submit'}
+                        </p>
                     </a>
 
                 </div>
