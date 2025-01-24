@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <div className='bg-[#090540] fixed z-50 w-full px-[100px] py-5 flex items-center justify-between'>
-        <img src={Logo} alt="Logo" className='w-[187px] h-[44px] cursor-pointer' onClick={() => navigate("/")}/>
+        <img src={Logo} alt="Logo" className='w-[180px] h-[48px] cursor-pointer' onClick={() => navigate("/")}/>
         <div className='flex items-center gap-[32px]'>
             <p className='font-neue text-base text-[#fff] cursor-pointer' onClick={() => navigate("/about")}>About Us</p>
             <p className='font-neue text-base text-[#fff] cursor-pointer' onClick={() => navigate("/services")}>Our Services</p>

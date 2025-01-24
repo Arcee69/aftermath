@@ -65,20 +65,21 @@ const Home = () => {
                         </p>
                     </div>
                     <p className='text-[14px] lg:text-base text-center text-[#fff] font-neue'>
-                        While our expertise shines in the Nigeria-UK corridor, our reach and capabilities extend across 
-                        the global investment landscape. For Nigerians, we provide access to the UK’s stable and lucrative 
-                        property market, offering investment opportunities backed by robust growth potential and legal protections.
+                        We are your dedicated guide in the property market. 
+                        We pride ourselves on delivering expert advice and personalized 
+                        support to help you achieve your property INVESTMENT goals. 
+                        Whether you're taking your first step onto the property ladder or 
+                        refining your investment portfolio, we’re here to make the process 
+                        seamless and straightforward.
                     </p>
                     <p className='text-[14px] lg:text-base text-center text-[#fff] font-neue'>
-                        For UK-based and international clients, we unlock opportunities in Nigeria’s dynamic and fast-developing 
-                        real estate market, with a focus on high-yield areas like Lagos, Ikoyi, Lekki Phase 1, and 
-                        Orange Island to mention a few.
+                        Additionally, we offer bespoke advisory and investment solutions for 
+                        discerning investors seeking opportunities in other thriving global markets.
                     </p>
                     <p className='text-[14px] lg:text-base text-center text-[#fff] font-neue'>
-                        Additionally, we offer bespoke advisory and investment solutions for discerning investors seeking 
-                        opportunities in other thriving global markets, AIK’s global partnerships and in-depth market 
-                        knowledge position us as the ideal bridge for cross-border investment opportunities, 
-                        ensuring every client’s objectives are met with precision and success.
+                        AIK’s global partnerships and in-depth market knowledge 
+                        position us as the ideal bridge for cross-border investment opportunities, 
+                        ensuring every client’s objectives are met with precision
                     </p>
                 </div>
                 <div className='w-full lg:w-[734px] flex flex-col items-center mt-[32px] justify-center gap-5'>
@@ -135,14 +136,7 @@ const Home = () => {
                             Nigerians seeking premium property investments in the UK.
                         </p>
                     </div>
-                    <div className='flex items-start border-[5px] rounded-xl border-l-[#090540] border-t-0 border-b-0 border-r-0 flex-row items-center h-[88px] lg:h-[104px] w-full rounded-lg gap-5 p-4 bg-[#F3ECE7]'>
-                        <div className='bg-[#FFFFFF] w-[60px] h-[40px] lg:w-[66px] lg:h-[56px] rounded-full flex items-center justify-center lg:justify-start'>
-                            <img src={Door} alt='Door' className='w-[30px] h-[18px] lg:w-[42px] lg:h-[25px]' />
-                        </div>
-                        <p className='text-[#323334] font-medium font-neue text-sm lg:text-[20px]'>
-                            UK-based clients exploring high-growth opportunities in Nigeria.
-                        </p>
-                    </div>
+                    
                     <div className='flex items-start border-[5px] rounded-xl border-l-[#090540] border-t-0 border-b-0 border-r-0 flex-row items-center h-[88px] lg:h-[104px] w-full rounded-lg gap-5 p-4 bg-[#F3ECE7]'>
                         <div className='bg-[#FFFFFF] w-[60px] h-[40px] lg:w-[66px] lg:h-[56px] rounded-full flex items-center justify-center lg:justify-start'>
                             <img src={Door} alt='Door' className='w-[30px] h-[18px] lg:w-[42px] lg:h-[25px]' />
@@ -232,20 +226,8 @@ const Home = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='h-auto lg:h-[168px] p-5 rounded-lg flex flex-col lg:flex-row lg:items-center gap-[32px]'>
-                        <div className='w-[72px] h-[72px] lg:w-[128px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
-                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
-                        </div>
-                        <div className='flex flex-col gap-2'>
-                            <p className='text-[#fff] font-neue text-base lg:text-lg font-bold'>
-                                Recent milestones
-                            </p>
-                            <ul className='font-neue text-[#fff] list-disc text-sm'>
-                                <li>Assisting UK-based clients in acquiring properties in Nigeria</li>
-                                <li>Advancing a Nigeria-UK investment deal with a leading Lagos asset management firm</li>
-                            </ul>
-                        </div>
-                    </div>
+                    
+                    
 
                 </div>
 
