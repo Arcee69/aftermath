@@ -87,9 +87,9 @@ const Home = () => {
                         Browse through our gallery of properties we have acquired for our clients over the years.
                     </p>
                     <div className='flex md:hidden flex-col gap-[36px]'>
-                        <img src={GalleryHouseA} alt='GalleryHouseA' className='' />
-                        <img src={GalleryHouseB} alt='GalleryHouseB' className='' />
-                        <img src={GalleryHouseC} alt='GalleryHouseC' className='' />
+                        <img src={HouseA} alt='GalleryHouseA' className='rounded-2xl' />
+                        <img src={HouseB} alt='GalleryHouseB' className='rounded-2xl' />
+                        <img src={HouseC} alt='GalleryHouseC' className='rounded-2xl' />
                     </div>
                     <div className='hidden md:flex flex-col items-center gap-5 md:w-[500px] lg:w-[734px]'>
                         <div className='w-full relative'>
