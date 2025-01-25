@@ -10,7 +10,9 @@ function App() {
 
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      once: true, // Ensures animations occur only once
+  });
   }, []);
 
 

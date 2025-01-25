@@ -7,9 +7,9 @@ import GirlB from "../../assets/png/girl_mobile.png"
 import HomeBg from "../../assets/png/home.png"
 import BlueBg from "../../assets/png/bg_blue.png"
 import SmallBlueBg from "../../assets/png/bg_blue_small.png"
-import HouseA from "../../assets/png/house-a.png"
-import HouseB from "../../assets/png/house-b.png"
-import HouseC from "../../assets/png/house-c.png"
+import HouseA from "../../assets/png/home_a.jpg"
+import HouseB from "../../assets/png/home_b.jpg"
+import HouseC from "../../assets/png/home_c.jpg"
 import HouseD from "../../assets/png/house_d.png"
 import Street from "../../assets/png/street_view.png"
 import Equity from "../../assets/png/equity.png"
@@ -92,12 +92,35 @@ const Home = () => {
                         <img src={GalleryHouseC} alt='GalleryHouseC' className='' />
                     </div>
                     <div className='hidden md:flex flex-col items-center gap-5 md:w-[500px] lg:w-[734px]'>
-                        <div className='w-full'>
-                            <img src={HouseA} alt='HouseA' className='' />
+                        <div className='w-full relative'>
+                            <img src={HouseA} alt='HouseA' className='rounded-2xl' />
+                            <div className="absolute bottom-14 left-5 z-10">
+                                <div className="flex flex-col gap-1">
+                                    <p className="text-white font-semibold uppercase text-base">THE CITADEL</p>
+                                    <p className="text-white text-xl font-bold uppercase">ARCHWAY, N19</p>
+                                </div>
+                            </div>
                         </div>
                         <div className='flex items-center gap-5'>
-                            <img src={HouseB} alt='HouseB' className='w-[165px] lg:w-[361px]' />
-                            <img src={HouseC} alt='HouseC' className='w-[165px] lg:w-[361px]' />
+                            <div className='w-full relative'>
+                                <img src={HouseB} alt='HouseB' className='rounded-2xl w-[165px] h-[300px] lg:w-[361px]' />
+                                <div className="absolute bottom-14 left-5 z-10">
+                                    <div className="flex flex-col gap-1">
+                                        <p className="text-white font-semibold uppercase text-base">THE CITADEL</p>
+                                        <p className="text-white text-xl font-bold uppercase">ARCHWAY, N19</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='w-full relative'>
+                                <img src={HouseC} alt='HouseC' className='rounded-2xl w-[165px] h-[300px] lg:w-[361px]' />
+                                <div className="absolute bottom-14 left-5 z-10">
+                                    <div className="flex flex-col gap-1">
+                                        <p className="text-white font-semibold uppercase text-base">THE CITADEL</p>
+                                        <p className="text-white text-xl font-bold uppercase">ARCHWAY, N19</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <img src={HouseC} alt='HouseC' className='w-[165px] lg:w-[361px]' /> */}
                         </div>
                     </div>
                 </div>
@@ -126,7 +149,7 @@ const Home = () => {
                         At AIK Ltd, we specialize in delivering world-class real estate consultancy services tailored to:
                     </p>
                     <div className='lg:hidden flex w-full'>
-                        <img src={HouseD} alt='HouseD' className='' />
+                        <img src={HouseB} alt='HouseB' className='' />
                     </div>
                     <div className='flex  items-start border-[5px] rounded-xl border-l-[#090540] border-t-0 border-b-0 border-r-0 flex-row items-center h-[88px] lg:h-[104px] w-full rounded-lg gap-5 p-4 bg-[#F3ECE7]'>
                         <div className='bg-[#FFFFFF] w-[60px] h-[40px] lg:w-[66px] lg:h-[56px] rounded-full flex items-center justify-center lg:justify-start'>
@@ -148,7 +171,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='hidden lg:flex w-5/12'>
-                <img src={HouseD} alt='HouseD' className='' />
+                <img src={HouseB} alt='HouseB' className='h-[500px]' />
             </div>
         </div>
 
