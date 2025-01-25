@@ -190,11 +190,12 @@ const Home = () => {
             data-aos-duration="3000"
         >
             <div 
-                className='w-full lg:w-11/12 mx-auto px-5 lg:px-[100px] h-auto py-[89px] gap-[56px] flex flex-col items-center'
+                className='w-full lg:w-11/12 mx-auto px-5 lg:px-[100px] rounded-3xl h-auto py-[89px] gap-[56px] flex flex-col items-center'
                 style={{
                     backgroundImage: `url(${isMobile ?  SmallBlueBg : BlueBg })`,
                     backgroundRepeat: "no-repeat",
-                    backgroundSize: `${isMobile ? "cover" : "contain" }` 
+                    backgroundSize: "cover" 
+                    // backgroundSize: `${isMobile ? "cover" : "contain" }` 
                 }}
             >
                 <div className='flex flex-col items-center gap-5'>
@@ -274,16 +275,17 @@ const Home = () => {
         </div>
 
         <div 
+            ref={chooseRef}
             data-aos="fade-up" 
             data-aos-duration="3000"
-            className='mt-[100px] lg:mt-[242px] w-full px-5 lg:px-[100px] flex flex-col md:flex-row items-start justify-between'
+            className='mt-[100px] lg:mt-[242px] gap-[114px] w-full px-5 lg:px-[100px] flex flex-col md:flex-row items-start'
         >
 
             <div className='hidden md:flex flex-col'>
                 <img src={Street} alt='Street' className='' />
             </div>
 
-            <div ref={chooseRef} className='w-full lg:w-[531px] flex flex-col gap-6 lg:gap-[30px]'>
+            <div className='w-full lg:w-[531px] flex flex-col gap-6 lg:gap-[30px]'>
                 <div className='flex flex-col gap-5'>
                     <p className='font-neue text-[#323334] font-bold text-[24px] lg:text-[40px]'>Why Choose Us?</p>
                     <p className='text-[14px] lg:text-base text-[#646668] font-neue'>
@@ -347,35 +349,36 @@ const Home = () => {
             <div className="flex flex-col gap-3">
                 <p className="font-bold font-neue text-[24px] lg:text-[40px] ">Investment Opportunities</p>
                 <p className="w-full lg:w-[460px] text-[#646668] text-sm lg:text-sm text-center font-neue">
-                    We invite discerning investors and organizations worldwide to partner with us through
+                    We invite forward-thinking organizations to partner with us in 
+                    pursuing strategic investment opportunities, offering:
                 </p>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-                <div className="h-[540px] lg:h-[627px]  py-[32px] px-5 shadow-xl flex flex-col gap-5 lg:gap-[37px] rounded-xl">
+                <div className=" h-[540px] lg:h-auto  py-[32px] px-5 shadow-xl flex flex-col gap-5 lg:gap-[37px] rounded-xl">
                     <img src={Equity} alt="Equity" className="" />
                     <div className="flex flex-col gap-3">
                         <p className="font-bold text-[#323334] font-neue text-lg lg:text-xl">Equity Partnerships</p>
                         <p className="text-sm lg:text-base font-neue text-[#646668]">
-                            At AIK Ltd, we redefine excellence in real estate investments, delivering bespoke solutions rooted in:
+                            Shared ownership with the potential for high returns.
                         </p>
                     </div>
                 </div>
-                <div className="h-[540px] lg:h-[627px]  py-[32px] px-5 shadow-xl flex flex-col gap-[37px] rounded-xl">
+                <div className="h-[540px] lg:h-auto  py-[32px] px-5 shadow-xl flex flex-col gap-[37px] rounded-xl">
                     <img src={Debt} alt="Debt" className="" />
                     <div className="flex flex-col gap-3">
                         <p className="font-bold text-[#323334] font-neue text-lg lg:text-xl">Debt Financing</p>
                         <p className="text-sm lg:text-base font-neue text-[#646668]">
-                            At AIK Ltd, we redefine excellence in real estate investments, delivering bespoke solutions rooted in:
+                            Secure, structured financing with competitive yields.
                         </p>
                     </div>
                 </div>
-                <div className="h-[540px] lg:h-[627px] py-[32px] px-5 shadow-xl flex flex-col gap-[37px] rounded-xl">
+                <div className="h-[540px] lg:h-auto py-[32px] px-5 shadow-xl flex flex-col gap-[37px] rounded-xl">
                     <img src={Profit} alt="Profit" className="" />
                     <div className="flex flex-col gap-3">
                         <p className="font-bold text-[#323334] font-neue text-lg lg:text-xl">Profit-Sharing Models</p>
                         <p className="text-sm lg:text-base font-neue text-[#646668]">
-                            At AIK Ltd, we redefine excellence in real estate investments, delivering bespoke solutions rooted in:
+                            A transparent model for equitable financial success.
                         </p>
                     </div>
                 </div>
@@ -398,7 +401,10 @@ const Home = () => {
                     </div>
                     <div className="flex flex-col gap-2">
                         <p className="font-neue text-[#323334] font-bold text-sm lg:text-[20px]">Global Diversification</p>
-                        <p className="text-sm text-[#646668] font-neue lg:text-base">Expand your portfolio globally with stable, high-yield investments.</p>
+                        <p className="text-sm text-[#646668] font-neue lg:text-base">
+                            Access stable, high-growth markets, 
+                            including the UK’s thriving property sector.
+                        </p>
                     </div>
                 </div>
 
@@ -409,7 +415,8 @@ const Home = () => {
                     <div className="flex flex-col gap-2">
                         <p className="font-neue text-[#323334] font-bold text-sm lg:text-[20px]">Risk Management:</p>
                         <p className="text-sm text-[#646668] font-neue lg:text-base">
-                            Benefit from AIK’s proven strategies and expertise in multiple markets.
+                            Leverage strategic partnerships and a well-researched, 
+                            expert-driven investment approach.
                         </p>
                     </div>
                 </div>
@@ -421,7 +428,7 @@ const Home = () => {
                     <div className="flex flex-col gap-2">
                         <p className="font-neue text-[#323334] font-bold text-sm lg:text-[20px]">Collaborative Growth</p>
                         <p className="text-sm text-[#646668] font-neue lg:text-base">
-                            Partner with experienced professionals for maximum impact.
+                            Partner with experienced professionals to achieve success on a global scale.
                         </p>
                     </div>
                 </div>
