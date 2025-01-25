@@ -347,7 +347,7 @@ const Home = () => {
             data-aos-duration="3000"
         >
             <div className="flex flex-col gap-3">
-                <p className="font-bold font-neue text-[24px] lg:text-[40px] ">Investment Opportunities</p>
+                <p className="font-bold font-neue text-[24px] lg:text-[40px] ">Investment Partnership Opportunities</p>
                 <p className="w-full lg:w-[460px] text-[#646668] text-sm lg:text-sm text-center font-neue">
                     We invite forward-thinking organizations to partner with us in 
                     pursuing strategic investment opportunities, offering:
