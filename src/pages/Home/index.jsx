@@ -70,7 +70,7 @@ const Home = () => {
                     <div className='gap-5 flex flex-col items-center'>
                         <img src={Logo} alt='Logo' className='w-[241px] h-[64px]' />
                         <p className='font-neue text-[#fff] text-center font-bold text-[24px] lg:text-[48px]'>
-                            Connecting you to the Right Property Investment
+                            Your Connection To The Right Property Investment Opportunities
                         </p>
                     </div>
                     <p className='text-[14px] lg:text-base text-center text-[#fff] font-neue'>
@@ -165,7 +165,7 @@ const Home = () => {
                             <img src={Door} alt='Door' className='w-[30px] h-[18px] lg:w-[42px] lg:h-[25px]' />
                         </div>
                         <p className='text-[#323334] font-medium font-neue text-sm lg:text-[20px]'>
-                            Tailored to seeking premium property investments in the UK.
+                            Seeking premium property investments in the UK.
                         </p>
                     </div>
                     
