@@ -21,8 +21,8 @@ const About = () => {
           </p>
           <img src={GirlB} alt='GirlB' className='w-full lg:hidden block ' />
           <p className='text-base font-bold font-neue text-[#646668]'>
-            Our mission is to bridge the gap between aspiring property owners and the 
-            thriving UK real estate market, ensuring a seamless, transparent, and secure experience.
+            Our Mission - To unlock the full potential of real estate and business investments through strategic 
+            partnerships, delivering sustainable value for our clients and stakeholders.
           </p>
           <button
             className='bg-[#090540] w-[146px] h-[45px] p-3 rounded'
@@ -41,13 +41,14 @@ const About = () => {
         <div className='w-full bg-[#B4C2A9] lg:rounded-tr-lg rounded-br-lg px-5 h-[370px] lg:h-[570px] lg:pl-[88px] flex items-center '>
             <div className='flex flex-col gap-5 lg:w-[445px] w-full'>
               <p className='font-neue text-[#323334] font-bold text-[32px] lg:text-[48px]'>
-                Who we are
+                WHO WE ARE
               </p>
               <p className='text-base font-neue text-[#191A1A]'>
-                We are your dedicated guide in the property market. 
-                We pride ourselves on delivering expert advice and personalized support to help you achieve your property goals. 
-                Whether you're taking your first step onto the property ladder or refining your investment portfolio, 
-                we’re here to make the process seamless and straightforward.
+                Aftermath Investment Konsults Ltd (AIK) is a property-focused, 
+                UK-based investment company dedicated to providing sustainable 
+                opportunities that foster wealth creation and long-term growth. 
+                Our core focus is on strategic real estate and business investments, 
+                tailored to help clients achieve their financial aspirations.
               </p>
             </div>
         </div>
