@@ -1,13 +1,24 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 
 import Carpet from "../../assets/png/logo_bg.png"
 
 import Logo from "../../assets/svg/logo_big.svg"
 import Door from "../../assets/svg/door.svg"
+import { useLocation } from 'react-router-dom'
 
 const Services = () => {
+
+    const servicesRef = useRef()
+    const { state } = useLocation(); 
+  
+    useEffect(() => { 
+        if (state?.section === "services" && servicesRef.current) {
+            servicesRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+    }, [state]); 
+
   return (
-    <div className='w-full' data-aos="fade-up" data-aos-duration="3000">
+    <div ref={servicesRef} className='w-full' data-aos="fade-up" data-aos-duration="3000">
         <div 
             style={{
                 background: `url(${Carpet})`,

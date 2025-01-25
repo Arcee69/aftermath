@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useEffect, useRef, useState } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 import Girl from "../../assets/png/girl.png"
 import Shapes from "../../assets/png/shapes.png"
@@ -25,6 +25,15 @@ import Logo from "../../assets/svg/logo_white.svg"
 const Home = () => {
   
     const navigate = useNavigate()
+
+    const chooseRef = useRef()
+    const { state } = useLocation();
+  
+    useEffect(() => {
+        if (state?.section === "choose" && chooseRef.current) {
+            chooseRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+    }, [state]); 
 
     const isMobile = window.innerWidth < 768
 
@@ -61,7 +70,7 @@ const Home = () => {
                     <div className='gap-5 flex flex-col items-center'>
                         <img src={Logo} alt='Logo' className='w-[241px] h-[64px]' />
                         <p className='font-neue text-[#fff] text-center font-bold text-[24px] lg:text-[48px]'>
-                            Bridging the Nigeria-UK and Global Connection
+                            Connecting you to the Right Property Investment
                         </p>
                     </div>
                     <p className='text-[14px] lg:text-base text-center text-[#fff] font-neue'>
@@ -84,7 +93,7 @@ const Home = () => {
                 </div>
                 <div className='w-full lg:w-[734px] flex flex-col items-center mt-[32px] justify-center gap-5'>
                     <p className='text-[#fff] font-neue text-lg text-center lg:w-[381px] mx-auto'>
-                        Browse through our gallery of properties we have acquired for our clients over the years.
+                        Browse through our gallery of properties.
                     </p>
                     <div className='flex md:hidden flex-col gap-[36px]'>
                         <img src={HouseA} alt='GalleryHouseA' className='rounded-2xl' />
@@ -156,7 +165,7 @@ const Home = () => {
                             <img src={Door} alt='Door' className='w-[30px] h-[18px] lg:w-[42px] lg:h-[25px]' />
                         </div>
                         <p className='text-[#323334] font-medium font-neue text-sm lg:text-[20px]'>
-                            Nigerians seeking premium property investments in the UK.
+                            Tailored to seeking premium property investments in the UK.
                         </p>
                     </div>
                     
@@ -274,7 +283,7 @@ const Home = () => {
                 <img src={Street} alt='Street' className='' />
             </div>
 
-            <div className='w-full lg:w-[531px] flex flex-col gap-6 lg:gap-[30px]'>
+            <div ref={chooseRef} className='w-full lg:w-[531px] flex flex-col gap-6 lg:gap-[30px]'>
                 <div className='flex flex-col gap-5'>
                     <p className='font-neue text-[#323334] font-bold text-[24px] lg:text-[40px]'>Why Choose Us?</p>
                     <p className='text-[14px] lg:text-base text-[#646668] font-neue'>
