@@ -183,7 +183,7 @@ const Footer = () => {
             </div>
             <div className='border border-[#D9DADA] py-[30px] px-5 lg:px-[100px] border-b-0 mt-[30px] lg:mt-[76px] flex flex-col gap-5 md:gap-0 md:flex-row md:items-center justify-between'>
                 <p className='font-neue text-base text-[#323334]'>
-                    &copy; Aftermath Investment Konsult, {new Date().getFullYear()}
+                    &copy; Aftermath Investment Konsults {new Date().getFullYear()}
                 </p>
                 <div className='flex items-center gap-6 text-[24px]'>
                     <img src={Facebook} alt='Facebook' className="w-[20px] h-[20px] lg:w-[32px] lg:h-[32px]" />

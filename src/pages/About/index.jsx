@@ -3,6 +3,9 @@ import React from 'react'
 import GirlB from "../../assets/png/girl-b.png"
 import GirlC from "../../assets/png/girl-c.png"
 import Girl from "../../assets/png/girl.png"
+import HouseD from "../../assets/png/home_d.jpg"
+import HouseE from "../../assets/png/home_e.jpg"
+import HouseF from "../../assets/png/home_f.jpg"
 import Shapes from "../../assets/png/shapes.png"
 
 import Door from "../../assets/svg/door.svg"
@@ -19,7 +22,7 @@ const About = () => {
           <p className='text-[32px] lg:text-[54px] leading-[38px] font-bold lg:leading-[72px] font-neue text-[#1E1E1E]'>
             Making UK Property Ownership a Reality
           </p>
-          <img src={GirlB} alt='GirlB' className='w-full lg:hidden block ' />
+          <img src={HouseD} alt='HouseD' className='w-full lg:hidden block ' />
           <p className='text-base font-bold font-neue text-[#646668]'>
             Our Mission - To unlock the full potential of real estate and business investments through strategic 
             partnerships, delivering sustainable value for our clients and stakeholders.
@@ -30,20 +33,20 @@ const About = () => {
             <p className='text-[#fff] font-neue font-bold'>Contact us now</p>
           </button>
         </div>
-        <img src={GirlB} alt='GirlB' className='w-[532px] hidden lg:block ' />
+        <img src={HouseD} alt='HouseD' className='w-[532px] h-[400px] rounded-2xl hidden lg:block ' />
       </div>
       <div 
         data-aos="fade-up" 
         data-aos-duration="3000"
         className='mt-[120px] lg:mt-[180px] flex flex-col lg:flex-row w-full'>
-        <img src={GirlB} alt='GirlB' className='w-full lg:hidden block bg-[#B4C2A9]' />
-        <img src={GirlC} alt='GirlC' className='hidden lg:block w-[650px] h-[570px] rounded-tl-lg rounded-bl-lg bg-[#B4C2A9]' />
+        <img src={HouseE} alt='HouseE' className='w-full lg:hidden block bg-[#B4C2A9]' />
+        <img src={HouseE} alt='HouseE' className='hidden lg:block w-[550px] h-[570px] rounded-tl-lg rounded-bl-lg bg-[#B4C2A9]' />
         <div className='w-full bg-[#B4C2A9] lg:rounded-tr-lg rounded-br-lg px-5 h-[370px] lg:h-[570px] lg:pl-[88px] flex items-center '>
-            <div className='flex flex-col gap-5 lg:w-[445px] w-full'>
+            <div className='flex flex-col items-center gap-5 lg:w-[445px] w-full'>
               <p className='font-neue text-[#323334] font-bold text-[32px] lg:text-[48px]'>
                 WHO WE ARE
               </p>
-              <p className='text-base font-neue text-[#191A1A]'>
+              <p className='text-base text-center font-neue text-[#191A1A]'>
                 Aftermath Investment Konsults Ltd (AIK) is a property-focused, 
                 UK-based investment company dedicated to providing sustainable 
                 opportunities that foster wealth creation and long-term growth. 
@@ -106,7 +109,7 @@ const About = () => {
             </div>
         </div>
         <div className='w-6/12 relative hidden lg:block'>
-            <img src={Girl} alt='Girl' className='w-[473px] h-[648px]' />
+            <img src={HouseF} alt='HouseF' className='w-[473px] h-[648px] rounded-3xl' />
             <img src={Shapes} alt='Shapes' className='w-[595px] h-[884px] absolute -top-20 -z-10' />
         </div>
       </div>
