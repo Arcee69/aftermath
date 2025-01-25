@@ -69,7 +69,7 @@ const Home = () => {
                 <div className='flex flex-col items-center gap-10'>
                     <div className='gap-5 flex flex-col items-center'>
                         <img src={Logo} alt='Logo' className='w-[241px] h-[64px]' />
-                        <p className='font-neue text-[#fff] text-center font-bold text-[24px] lg:text-[48px]'>
+                        <p className='font-neue text-[#fff] text-center font-bold uppercase text-[24px] lg:text-[48px]'>
                             Your Connection To The Right Property Investment Opportunities
                         </p>
                     </div>
