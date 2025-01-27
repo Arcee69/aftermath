@@ -38,15 +38,16 @@ const About = () => {
       <div 
         data-aos="fade-up" 
         data-aos-duration="3000"
-        className='mt-[120px] lg:mt-[180px] flex flex-col lg:flex-row w-full'>
-        <img src={HouseE} alt='HouseE' className='w-full lg:hidden block bg-[#B4C2A9]' />
-        <img src={HouseE} alt='HouseE' className='hidden lg:block w-[550px] h-[570px] rounded-tl-lg rounded-bl-lg bg-[#B4C2A9]' />
-        <div className='w-full bg-[#B4C2A9] lg:rounded-tr-lg rounded-br-lg px-5 h-[370px] lg:h-[570px] lg:pl-[88px] flex items-center '>
-            <div className='flex flex-col items-center gap-5 lg:w-[445px] w-full'>
+        className='mt-[120px] lg:mt-[180px] flex flex-col lg:flex-row w-full justify-between'
+      >
+        <img src={HouseE} alt='HouseE' className='w-full lg:hidden block bg-[#B4C2A9] rounded-2xl' />
+        <img src={HouseE} alt='HouseE' className='hidden lg:block w-6/12 h-[400px] rounded-2xl bg-[#B4C2A9]' />
+        <div className='w-full lg:w-5/12 bg-[#fff] lg:rounded-tr-lg rounded-br-lg  h-[400px] flex items-center '>
+            <div className='flex flex-col  gap-5  w-full'>
               <p className='font-neue text-[#323334] font-bold text-[32px] lg:text-[48px]'>
                 WHO WE ARE
               </p>
-              <p className='text-base text-center font-neue text-[#191A1A]'>
+              <p className='text-base font-neue text-[#191A1A]'>
                 Aftermath Investment Konsults Ltd (AIK) is a property-focused, 
                 UK-based investment company dedicated to providing sustainable 
                 opportunities that foster wealth creation and long-term growth. 
@@ -68,7 +69,7 @@ const About = () => {
                     providing access to residential and buy to let property finance.
                 </p>
             </div>
-            <img src={GirlB} alt='GirlB' className='h-[319px] w-full md:hidden' />
+            <img src={HouseF} alt='GirlB' className='h-[319px] w-full md:hidden  rounded-2xl' />
             <div className='flex flex-col gap-[33px]'>
                 <div className='flex flex-col items-start lg:flex-row lg:items-center h-[256px] lg:h-[180px] w-full rounded-lg gap-3 p-4 bg-[#F3ECE7]'>
                     <div className='bg-[#FFFFFF] w-[72px] h-[72px] lg:w-[250px] lg:h-[95px] rounded-full flex items-center justify-center lg:justify-start'>
