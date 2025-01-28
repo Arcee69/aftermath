@@ -106,7 +106,7 @@ const Home = () => {
                             <div className="absolute bottom-14 left-5 z-10">
                                 <div className="flex flex-col gap-1">
                                     <p className="text-white font-semibold uppercase text-base">THE CITADEL</p>
-                                    <p className="text-white text-xl font-bold uppercase">ARCHWAY, N19</p>
+                                    {/* <p className="text-white text-xl font-bold uppercase">ARCHWAY, N19</p> */}
                                 </div>
                             </div>
                         </div>
@@ -116,7 +116,7 @@ const Home = () => {
                                 <div className="absolute bottom-14 left-5 z-10">
                                     <div className="flex flex-col gap-1">
                                         <p className="text-white font-semibold uppercase text-base">THE CITADEL</p>
-                                        <p className="text-white text-xl font-bold uppercase">ARCHWAY, N19</p>
+                                        {/* <p className="text-white text-xl font-bold uppercase">ARCHWAY, N19</p> */}
                                     </div>
                                 </div>
                             </div>
@@ -125,7 +125,7 @@ const Home = () => {
                                 <div className="absolute bottom-14 left-5 z-10">
                                     <div className="flex flex-col gap-1">
                                         <p className="text-white font-semibold uppercase text-base">THE CITADEL</p>
-                                        <p className="text-white text-xl font-bold uppercase">ARCHWAY, N19</p>
+                                        {/* <p className="text-white text-xl font-bold uppercase">ARCHWAY, N19</p> */}
                                     </div>
                                 </div>
                             </div>
@@ -137,7 +137,7 @@ const Home = () => {
                 <button
                     className='w-[138px] h-[45px] rounded-lg bg-[#090540] mb-[60px] p-2'
                     type='button'
-                    onClick={() => navigate("/gallery") }
+                    onClick={() => {navigate("/gallery"); window.scrollTo(0,0)}}
                 >
                     <p className='text-[#fff] font-neue font-bold text-[14px]'>See full gallery</p>
                 </button>
