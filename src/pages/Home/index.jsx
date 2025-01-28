@@ -206,8 +206,8 @@ const Home = () => {
                         Let us help you turn your property aspirations into reality with confidence and ease.
                     </p>
                 </div>
-                <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
-                    <div className=' h-auto lg:h-[168px] p-5 bg-[#6B698E] rounded-lg flex flex-col lg:flex-row lg:items-center gap-[32px]'>
+                <div className='grid grid-cols-1 lg:grid-cols-1 gap-6'>
+                    <div className='h-auto lg:h-[168px] p-5 bg-[#6B698E] rounded-lg flex flex-col lg:flex-row lg:items-center gap-[32px]'>
                         <div className='w-[72px] h-[72px] lg:w-[98px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
                             <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
                         </div>
