@@ -75,7 +75,7 @@ const Gallery = () => {
                                 <div className="absolute bottom-14 left-5 z-10">
                                     <div className="flex flex-col gap-4">
                                         <p className="text-white font-semibold uppercase text-base">{item.name}</p>
-                                        <p className="text-white text-xl uppercase">{item.address}</p>
+                                        {/* <p className="text-white text-xl uppercase">{item.address}</p> */}
                                     </div>
                                 </div>
                             </div>

@@ -206,57 +206,61 @@ const Home = () => {
                         Let us help you turn your property aspirations into reality with confidence and ease.
                     </p>
                 </div>
-                <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
-                    <div className='h-auto lg:h-[168px] p-5 bg-[#6B698E] rounded-lg flex flex-col lg:flex-row lg:items-center gap-[32px]'>
-                        <div className='w-[72px] h-[72px] lg:w-[98px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
-                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
+                <div className='flex flex-col items-center gap-6'>
+                    <div className='flex flex-col lg:flex-row items-center gap-6'>
+                        <div className='h-auto lg:h-[168px] p-5 bg-[#6B698E] rounded-lg flex flex-col lg:flex-row lg:items-center gap-[32px]'>
+                            <div className='w-[72px] h-[72px] lg:w-[98px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
+                                <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
+                            </div>
+                            <div className='flex flex-col gap-2'>
+                                <p className='text-[#fff] text-base font-neue lg:text-lg  font-bold'>
+                                    Property Sourcing and Inspection
+                                </p>
+                                <p className='font-neue text-[#fff] text-sm lg:text-base'>
+                                    Identifying high-value opportunities tailored to your goals.
+                                </p>
+                            </div>
                         </div>
-                        <div className='flex flex-col gap-2'>
-                            <p className='text-[#fff] text-base font-neue lg:text-lg  font-bold'>
-                                Property Sourcing and Inspection
-                            </p>
-                            <p className='font-neue text-[#fff] text-sm lg:text-base'>
-                                Identifying high-value opportunities tailored to your goals.
-                            </p>
-                        </div>
-                    </div>
-                    <div className='h-auto lg:h-[168px] p-5 bg-[#6B698E] rounded-lg flex flex-col lg:flex-row lg:items-center gap-[32px]'>
-                        <div className='w-[72px] h-[72px] lg:w-[98px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
-                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
-                        </div>
-                        <div className='flex flex-col gap-2'>
-                            <p className='text-[#fff] font-neue text-base lg:text-lg font-bold'>
-                                Due Dilligence
-                            </p>
-                            <p className='font-neue text-[#fff] text-sm lg:text-base'>
-                                Providing peace of mind through meticulous checks
-                            </p>
-                        </div>
-                    </div>
-                    <div className='h-auto lg:h-[168px] p-5 bg-[#6B698E] lg:hidden rounded-lg flex flex-col lg:flex-row lg:items-center gap-[32px]'>
-                        <div className='w-[72px] h-[72px] lg:w-[98px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
-                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
-                        </div>
-                        <div className='flex flex-col gap-2'>
-                            <p className='text-[#fff] font-neue text-base lg:text-lg font-bold'>
-                                Contract Finalization
-                            </p>
-                            <p className='font-neue text-[#fff] text-sm lg:text-base'>
-                                Ensuring a smooth and successful transaction process.
-                            </p>
+                        <div className='h-auto lg:h-[168px] p-5 bg-[#6B698E] rounded-lg flex flex-col lg:flex-row lg:items-center gap-[32px]'>
+                            <div className='w-[72px] h-[72px] lg:w-[98px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
+                                <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
+                            </div>
+                            <div className='flex flex-col gap-2'>
+                                <p className='text-[#fff] font-neue text-base lg:text-lg font-bold'>
+                                    Due Dilligence
+                                </p>
+                                <p className='font-neue text-[#fff] text-sm lg:text-base'>
+                                    Providing peace of mind through meticulous checks
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div className='h-[168px] p-5 bg-[#6B698E] rounded-lg hidden lg:flex flex-col lg:flex-row lg:items-center gap-[32px]'>
-                        <div className='w-[72px] h-[72px] lg:w-[88px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
-                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
+                    <div className=' flex items-center justify-center'>
+                        <div className='h-auto lg:h-[168px] p-5 bg-[#6B698E] lg:hidden rounded-lg flex flex-col lg:flex-row lg:items-center gap-[32px]'>
+                            <div className='w-[72px] h-[72px] lg:w-[98px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
+                                <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
+                            </div>
+                            <div className='flex flex-col gap-2'>
+                                <p className='text-[#fff] font-neue text-base lg:text-lg font-bold'>
+                                    Contract Finalization
+                                </p>
+                                <p className='font-neue text-[#fff] text-sm lg:text-base'>
+                                    Ensuring a smooth and successful transaction process.
+                                </p>
+                            </div>
                         </div>
-                        <div className='flex flex-col gap-2'>
-                            <p className='text-[#fff] font-neue text-lg font-bold'>
-                                Contract Finalization
-                            </p>
-                            <p className='font-neue text-[#fff] text-base'>
-                                Ensuring a smooth and successful transaction process.
-                            </p>
+                        <div className='h-[168px] p-5 bg-[#6B698E] rounded-lg hidden lg:flex flex-col lg:flex-row lg:items-center gap-[32px]'>
+                            <div className='w-[72px] h-[72px] lg:w-[88px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
+                                <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
+                            </div>
+                            <div className='flex flex-col gap-2'>
+                                <p className='text-[#fff] font-neue text-lg font-bold'>
+                                    Contract Finalization
+                                </p>
+                                <p className='font-neue text-[#fff] text-base'>
+                                    Ensuring a smooth and successful transaction process.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     
