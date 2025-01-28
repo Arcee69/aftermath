@@ -5,7 +5,7 @@ import axios from 'axios'
 
 import Shapes from "../assets/png/shapes.png"
 
-import Logo from "../assets/svg/logo_big.svg"
+import Logo from "../assets/svg/logo_footer.svg"
 import Facebook from "../assets/svg/facebook.svg"
 import Mail from "../assets/svg/mail.svg"
 import Linkedin from "../assets/svg/linkedin.svg"
@@ -130,6 +130,7 @@ const Footer = () => {
                     <a 
                         className='w-[101px] h-[44px] bg-[#fff] md:mx-auto lg:mx-0 flex flex-col items-center justify-center rounded-lg'
                         onClick={submitForm}
+                        href={`mailto:info@aftermathinvestments.com?subject=Contact from ${fullName} &body=Full Name: ${fullName}%0D%0AEmail: ${email}%0D%0AService: ${service}%0D%0AMessage: ${message}`}
                     >
                         <p className='text-[#090540] font-semibold text-base'>
                             {loading ? <CgSpinner className=" animate-spin text-lg" /> : 'Submit'}
@@ -151,8 +152,12 @@ const Footer = () => {
                 <div className='w-full'>
                     <img src={Logo} alt='Logo' className='w-[250px] h-[82px]'/>
                 </div>
-                <div className='w-full flex flex-col md:flex-row md:items-center gap-5 md:gap-0 justify-between'>
-                    <p className='text-[#646668] font-neue text-base'>Investment firm located in London, UK</p>
+                <div className='w-full flex flex-col md:flex-row md:items-start gap-5 md:gap-0 justify-between'>
+                    <div className='flex flex-col'>
+                        <p className='text-[#646668] font-neue text-base'>Aftemath Investment Konsults Limited</p>
+                        <p className='text-[#646668] font-neue text-base'>Company No 15049339</p>
+                        <p className='text-[#646668] font-neue text-base'>Investment Firm in The United Kingdom</p>
+                    </div>
                     <div className='flex items-center gap-10 lg:gap-2 '>
                         <p 
                             className='font-neue text-sm lg:text-base text-[#323334] cursor-pointer'
