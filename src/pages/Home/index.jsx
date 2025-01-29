@@ -207,7 +207,7 @@ const Home = () => {
                     </p>
                 </div>
                 <div className='flex flex-col items-center gap-6'>
-                    <div className='flex flex-col lg:flex-row items-center gap-6'>
+                    <div className='flex items-center justify-between'>
                         <div className='h-auto lg:h-[168px] p-5 bg-[#6B698E] rounded-lg flex flex-col lg:flex-row lg:items-center gap-[32px]'>
                             <div className='w-[72px] h-[72px] lg:w-[98px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
                                 <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
@@ -218,6 +218,21 @@ const Home = () => {
                                 </p>
                                 <p className='font-neue text-[#fff] text-sm lg:text-base'>
                                     Identifying high-value opportunities tailored to your goals.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='flex flex-col lg:flex-row items-center gap-6'>
+                        <div className='h-auto lg:h-[168px] p-5 bg-[#6B698E] rounded-lg flex flex-col lg:flex-row lg:items-center gap-[32px]'>
+                            <div className='w-[72px] h-[72px] lg:w-[98px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
+                                <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
+                            </div>
+                            <div className='flex flex-col gap-2'>
+                                <p className='text-[#fff] font-neue text-base lg:text-lg font-bold'>
+                                    Contract Finalization
+                                </p>
+                                <p className='font-neue text-[#fff] text-sm lg:text-base'>
+                                    Ensuring a smooth and successful transaction process.
                                 </p>
                             </div>
                         </div>
@@ -234,22 +249,7 @@ const Home = () => {
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div className=' flex items-center justify-center'>
-                        <div className='h-auto lg:h-[168px] p-5 bg-[#6B698E] lg:hidden rounded-lg flex flex-col lg:flex-row lg:items-center gap-[32px]'>
-                            <div className='w-[72px] h-[72px] lg:w-[98px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
-                                <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
-                            </div>
-                            <div className='flex flex-col gap-2'>
-                                <p className='text-[#fff] font-neue text-base lg:text-lg font-bold'>
-                                    Contract Finalization
-                                </p>
-                                <p className='font-neue text-[#fff] text-sm lg:text-base'>
-                                    Ensuring a smooth and successful transaction process.
-                                </p>
-                            </div>
-                        </div>
-                        <div className='h-[168px] p-5 bg-[#6B698E] rounded-lg hidden lg:flex flex-col lg:flex-row lg:items-center gap-[32px]'>
+                        {/* <div className='h-[168px] p-5 bg-[#6B698E] rounded-lg flex flex-col lg:flex-row lg:items-center gap-[32px]'>
                             <div className='w-[72px] h-[72px] lg:w-[88px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
                                 <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
                             </div>
@@ -261,10 +261,8 @@ const Home = () => {
                                     Ensuring a smooth and successful transaction process.
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                    
-                    
+                        </div> */}
+                    </div>    
 
                 </div>
 

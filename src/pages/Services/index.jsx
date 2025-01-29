@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 
 import Carpet from "../../assets/png/logo_bg.png"
+import HouseKey from "../../assets/png/house_key.jpg"
 
 import Logo from "../../assets/svg/logo_big.svg"
 import Door from "../../assets/svg/door.svg"
@@ -57,31 +58,8 @@ const Services = () => {
                             From family homes to investment opportunities, our team will uncover options that suit you best.
                         </p>
                     </div>
-                    <div className=' h-[324px] p-5 bg-[#F5F7F8] rounded-lg flex flex-col gap-[28px]'>
-                        <div className='w-[72px] h-[72px] lg:w-[88px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
-                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
-                        </div>
-                        <p className='text-[#323334] font-neue lg:w-[359px] leading-[24px] text-lg font-bold'>
-                            Acquisition Support
-                        </p>
-                        <p className='font-neue text-[#646668] text-base'>
-                            Navigating property financing can be complex. 
-                            We work closely with financial specialists to help you explore tailored solutions that fit your situation.
-                        </p>
-                    </div>
-                    {/* <div className='h-[324px] p-5 bg-[#F3ECE7] lg:hidden rounded-lg flex flex-col gap-[32px]'>
-                        <div className='w-[72px] h-[72px] lg:w-[88px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
-                            <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
-                        </div>
-                        <p className='text-[#323334] font-neue text-lg lg:w-[259px] leading-[24px] font-bold'>
-                            Pre-Approval Within 24 Hours
-                        </p>
-                        <p className='font-neue text-[#646668] text-base'>
-                            We understand the importance of moving quickly in the property market. 
-                            That’s why we offer pre-approval within 24 hours, helping you take the first step toward 
-                            securing your property.
-                        </p>
-                    </div> */}
+                    <img src={HouseKey} alt='HouseKey' className='h-[324px] rounded-lg' />
+                  
                     <div className='h-[324px] p-5 bg-[#F5F7F8] rounded-lg flex flex-col gap-[28px]'>
                         <div className='w-[72px] h-[72px] lg:w-[88px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
                             <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
@@ -94,19 +72,18 @@ const Services = () => {
                             giving you peace of mind.
                         </p>
                     </div>
-                    {/* <div className='h-[324px] p-5 bg-[#F3ECE7] rounded-lg hidden lg:flex flex-col gap-[32px]'>
+                    <div className='h-[324px] p-5 bg-[#F5F7F8] rounded-lg flex flex-col gap-[28px]'>
                         <div className='w-[72px] h-[72px] lg:w-[88px] lg:h-[88px] bg-[#FFFFFF] rounded-full flex items-center justify-center lg:justify-start'>
                             <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
                         </div>
-                        <p className='text-[#323334] font-neue text-lg lg:w-[259px] leading-[24px] font-bold'>
-                            Pre-Approval Within 24 Hours
+                        <p className='text-[#323334] font-neue lg:w-[359px] leading-[24px] text-lg font-bold'>
+                            Acquisition Support
                         </p>
                         <p className='font-neue text-[#646668] text-base'>
-                            We understand the importance of moving quickly in the property market. 
-                            That’s why we offer pre-approval within 24 hours, helping you take the first step toward 
-                            securing your property.
+                            Navigating property financing can be complex. 
+                            We work closely with financial specialists to help you explore tailored solutions that fit your situation.
                         </p>
-                    </div> */}
+                    </div>
 
                 </div>
 

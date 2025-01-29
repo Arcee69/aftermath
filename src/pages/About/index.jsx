@@ -45,7 +45,7 @@ const About = () => {
         <div className='w-full lg:w-5/12 bg-[#fff] lg:rounded-tr-lg rounded-br-lg  h-[400px] flex items-center '>
             <div className='flex flex-col  gap-5  w-full'>
               <p className='font-neue text-[#323334] font-bold text-[32px] lg:text-[48px]'>
-                WHO WE ARE
+                Who We Are
               </p>
               <p className='text-base font-neue text-[#191A1A]'>
                 Aftermath Investment Konsults Ltd (AIK) is a property-focused, 
