@@ -41,7 +41,7 @@ const Home = () => {
     <div className='w-full' data-aos="fade-up" data-aos-duration="3000">
         <div 
             style={{
-                background: `url(${HomeBg})`,
+                background: `url(https://res.cloudinary.com/de1vn03vc/image/upload/f_auto,q_auto/v1/aik/rjk7av3l8lyx51xqlope)`, //HomeBg
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover"
             }}

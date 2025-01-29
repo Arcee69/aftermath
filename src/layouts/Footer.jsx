@@ -10,6 +10,8 @@ import Facebook from "../assets/svg/facebook.svg"
 import Mail from "../assets/svg/mail.svg"
 import Linkedin from "../assets/svg/linkedin.svg"
 import { useLocation, useNavigate } from 'react-router-dom'
+import ModalPop from '../components/modalPop'
+import Policy from './Policy'
 
 
 const Footer = () => {
@@ -18,6 +20,7 @@ const Footer = () => {
     const [service, setService] = useState("")
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
+    const [openPrivacyPolicy, setOpenPrivacyPolicy] = useState(false)
 
     const navigate = useNavigate()
 
@@ -183,14 +186,21 @@ const Footer = () => {
                         >
                             Contact Us
                         </p>
+                        <p 
+                            className='font-neue text-sm lg:text-base text-[#323334] cursor-pointer'
+                            onClick={() => setOpenPrivacyPolicy(true)}
+                        >
+                            Privacy Policy
+                        </p>
                     </div>
                 </div>
             </div>
             <div className='border border-[#D9DADA] py-[30px] px-5 lg:px-[100px] border-b-0 mt-[30px] lg:mt-[76px] flex flex-col gap-5 md:gap-0 md:flex-row md:items-center justify-between'>
                 <p className='font-neue text-base text-[#323334]'>
-                    &copy; Aftermath Investment Konsults {new Date().getFullYear()}
+                    &copy; All Rights Reserved Aftermath Investment Konsults {new Date().getFullYear()}
                 </p>
                 <div className='flex items-center gap-6 text-[24px]'>
+                    {/* <p className='font-neue text-base text-[#323334]'></p> */}
                     <img src={Facebook} alt='Facebook' className="w-[20px] h-[20px] lg:w-[32px] lg:h-[32px]" />
                     <img src={Mail} alt='Mail' className="w-[20px] h-[20px] lg:w-[32px] lg:h-[32px]" />
                     <img src={Linkedin} alt='Linkedin' className="w-[20px] h-[20px] lg:w-[32px] lg:h-[32px]" />
@@ -199,6 +209,10 @@ const Footer = () => {
             </div>
 
         </div>
+
+        <ModalPop isOpen={openPrivacyPolicy}>
+            <Policy handleClose={() => setOpenPrivacyPolicy(false)} />
+        </ModalPop>
        
     </>
   )
