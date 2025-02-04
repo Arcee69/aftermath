@@ -68,8 +68,10 @@ const Services = () => {
                             Administrative Assistance
                         </p>
                         <p className='font-neue text-[#646668] text-base'>
-                            We connect you with trusted admins and ensure all necessary paperwork is handled efficiently, 
-                            giving you peace of mind.
+                            We connect you with trusted professionals who expertly manage 
+                            the necessary paperwork for your acquisition and investment journey, 
+                            ensuring a smooth, efficient, and hassle-free process from start to finish—giving 
+                            you peace of mind every step of the way.
                         </p>
                     </div>
                     <div className='h-[324px] p-5 bg-[#F5F7F8] rounded-lg flex flex-col gap-[28px]'>
