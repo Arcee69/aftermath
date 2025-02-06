@@ -105,7 +105,7 @@ const Home = () => {
                             <img src={HouseA} alt='HouseA' className='rounded-2xl' />
                             <div className="absolute bottom-14 left-5 z-10">
                                 <div className="flex flex-col gap-1">
-                                    <p className="text-white font-semibold uppercase text-base">THE CITADEL</p>
+                                    {/* <p className="text-white font-semibold uppercase text-base">THE CITADEL</p> */}
                                     {/* <p className="text-white text-xl font-bold uppercase">ARCHWAY, N19</p> */}
                                 </div>
                             </div>
@@ -115,7 +115,7 @@ const Home = () => {
                                 <img src={HouseB} alt='HouseB' className='rounded-2xl w-[165px] h-[300px] lg:w-[361px]' />
                                 <div className="absolute bottom-14 left-5 z-10">
                                     <div className="flex flex-col gap-1">
-                                        <p className="text-white font-semibold uppercase text-base">THE CITADEL</p>
+                                        {/* <p className="text-white font-semibold uppercase text-base">THE CITADEL</p> */}
                                         {/* <p className="text-white text-xl font-bold uppercase">ARCHWAY, N19</p> */}
                                     </div>
                                 </div>
@@ -124,7 +124,7 @@ const Home = () => {
                                 <img src={HouseC} alt='HouseC' className='rounded-2xl w-[165px] h-[300px] lg:w-[361px]' />
                                 <div className="absolute bottom-14 left-5 z-10">
                                     <div className="flex flex-col gap-1">
-                                        <p className="text-white font-semibold uppercase text-base">THE CITADEL</p>
+                                        {/* <p className="text-white font-semibold uppercase text-base">THE CITADEL</p> */}
                                         {/* <p className="text-white text-xl font-bold uppercase">ARCHWAY, N19</p> */}
                                     </div>
                                 </div>
@@ -320,15 +320,16 @@ const Home = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='flex flex-col items-start rounded-xl border-[5px] border-l-[#090540] border-y-0 border-r-0 lg:flex-row lg:items-center h-[256px] lg:h-[180px] w-full rounded-lg gap-3 p-4 bg-[#F8F9F7]'>
+                    <div className='flex flex-col items-start rounded-xl border-[5px] border-l-[#090540] border-y-0 border-r-0 lg:flex-row lg:items-center h-[256px] lg:h-auto w-full rounded-lg gap-3 p-4 bg-[#F8F9F7]'>
                         <div className='bg-[#FFFFFF] w-[72px] h-[72px] lg:w-[250px] lg:h-[95px] rounded-full flex items-center justify-center lg:justify-start'>
                             <img src={Door} alt='Door' className='w-[54px] h-[32px] lg:w-[76px] lg:h-[45px]' />
                         </div>
                         <div className='flex flex-col gap-1'>
-                            <p className='text-[#323334] font-bold font-neue text-[20px]'>Access to Exclusive Deals</p>
+                            <p className='text-[#323334] font-bold font-neue text-[20px]'>Exclusive Investment Opportunities</p>
                             <p className='text-[#646668] text-base'>
-                                Our strong relationships with top UK lenders mean we can provide you 
-                                with exclusive mortgage rates and terms that are not always available to the public.
+                               Our strong partnerships with top property experts and lenders give you access to premium
+                               deals, competitive mortgage rates, and flexible financing tailored to maximize your
+                               investment returns. 
                             </p>
                         </div>
                     </div>
