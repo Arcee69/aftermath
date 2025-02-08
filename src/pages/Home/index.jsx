@@ -315,8 +315,8 @@ const Home = () => {
                         <div className='flex flex-col gap-1'>
                             <p className='text-[#323334] font-bold font-neue text-[20px]'>Tailored Solutions</p>
                             <p className='text-[#646668] text-base'>
-                                We understand unique challenges and opportunities and we offer mortgage products 
-                                that are flexible and customized to your financial circumstances.
+                                We collaborate with trusted finance experts to provide creative, 
+                                flexible mortgage products and funding solutions tailored to your unique financial needs.
                             </p>
                         </div>
                     </div>
@@ -327,9 +327,9 @@ const Home = () => {
                         <div className='flex flex-col gap-1'>
                             <p className='text-[#323334] font-bold font-neue text-[20px]'>Exclusive Investment Opportunities</p>
                             <p className='text-[#646668] text-base'>
-                               Our strong partnerships with top property experts and lenders give you access to premium
-                               deals, competitive mortgage rates, and flexible financing tailored to maximize your
-                               investment returns. 
+                                Our strong partnerships with top developers and industry experts give 
+                                investors access to off-market deals, structured investments, 
+                                and tailored advisory services.
                             </p>
                         </div>
                     </div>
