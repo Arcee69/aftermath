@@ -159,33 +159,38 @@ const Footer = () => {
                     <div className='flex flex-col'>
                         <p className='text-[#646668] font-neue text-base'>Aftemath Investment Konsults Limited</p>
                         <p className='text-[#646668] font-neue text-base'>Company No 15049339</p>
-                        <p className='text-[#646668] font-neue text-base'>Investment Firm in The United Kingdom</p>
+                        <p className='text-[#646668] font-neue text-base'>Property Investment Firm in The UK</p>
                     </div>
                     <div className='flex items-center gap-10 lg:gap-2 '>
-                        <p 
+                        {/* <p 
                             className='font-neue text-sm lg:text-base text-[#323334] cursor-pointer'
                             onClick={() => navigate("/", {state: {
                                 section: "choose"
                             }})}
                         >
                             Why Choose Us
-                        </p>
-                        <p 
+                        </p> */}
+                        {/* <p 
                             className='font-neue text-sm lg:text-base text-[#323334] cursor-pointer'
                             onClick={() => navigate("/services", {state: {
                                 section: "services"
                             }})}
                         >
                             Our Services
-                        </p>
-                        <p 
-                            className='font-neue text-sm lg:text-base text-[#323334] cursor-pointer'
-                            onClick={() => navigate("/", {state: {
-                                section: "contact"
-                            }})}
-                        >
-                            Contact Us
-                        </p>
+                        </p> */}
+                        {/* <p  
+                        //     className='font-neue text-sm lg:text-base text-[#323334] cursor-pointer'
+                        //     onClick={() => navigate("/", {state: {
+                        //         section: "contact"
+                        //     }})}
+                        // >
+                        //     Contact Us
+                    </p> */}
+                        <img src={Facebook} alt='Facebook' className="w-[20px] h-[20px] lg:w-[32px] lg:h-[32px]" />
+
+                        <img src={Mail} alt='Mail' className="w-[20px] h-[20px] lg:w-[32px] lg:h-[32px]" />
+
+                        <img src={Linkedin} alt='Linkedin' className="w-[20px] h-[20px] lg:w-[32px] lg:h-[32px]" />
                         <p 
                             className='font-neue text-sm lg:text-base text-[#323334] cursor-pointer'
                             onClick={() => setOpenPrivacyPolicy(true)}
@@ -199,12 +204,12 @@ const Footer = () => {
                 <p className='font-neue text-base text-[#323334]'>
                     &copy; All Rights Reserved Aftermath Investment Konsults {new Date().getFullYear()}
                 </p>
-                <div className='flex items-center gap-6 text-[24px]'>
-                    {/* <p className='font-neue text-base text-[#323334]'></p> */}
+                {/* <div className='flex items-center gap-6 text-[24px]'>
+                    
                     <img src={Facebook} alt='Facebook' className="w-[20px] h-[20px] lg:w-[32px] lg:h-[32px]" />
                     <img src={Mail} alt='Mail' className="w-[20px] h-[20px] lg:w-[32px] lg:h-[32px]" />
                     <img src={Linkedin} alt='Linkedin' className="w-[20px] h-[20px] lg:w-[32px] lg:h-[32px]" />
-                </div>
+                </div> */}
 
             </div>
 
